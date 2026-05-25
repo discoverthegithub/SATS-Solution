@@ -72,39 +72,56 @@ const Services = () => {
   return (
     <main id="main-content">
       {/* ═══ HERO ═══ */}
-      <section className="sv-hero" style={{ position: 'relative', color: '#fff', textAlign: 'center', overflow: 'hidden', background: '#020617', padding: '120px 0 80px' }}>
-        <img
-          src="/epic_newyork.png"
-          alt="Epic New York"
+      <section className="sv-hero" style={{
+        position: 'relative',
+        textAlign: 'center',
+        overflow: 'hidden',
+        padding: '160px 0 100px',
+        backgroundColor: '#020617'
+      }}>
+        {/* NYC Skyline "Live" Background Layer */}
+        <div
           className="live-space-bg"
-          style={{ opacity: 0.7, filter: 'contrast(1.05) brightness(1.1)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
-        />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(2, 6, 23, 0.3), rgba(2, 6, 23, 0.7))', zIndex: 1 }}></div>
+          style={{
+            position: 'absolute',
+            inset: 0,
+            zIndex: 0,
+            backgroundImage: "url('/epic_newyork.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.9,
+            filter: 'contrast(1.1) brightness(0.8)'
+          }}
+        ></div>
 
-        <div className="hero-bg-effects" style={{ zIndex: 1 }}>
-          <div className="hero-orb hero-orb--1" style={{ opacity: 0.2 }}></div>
-          <div className="hero-orb hero-orb--2" style={{ opacity: 0.15 }}></div>
-          <div className="hero-orb hero-orb--3" style={{ opacity: 0.1 }}></div>
-          <div className="hero-grid-pattern" style={{ opacity: 0.05 }}></div>
-        </div>
+        {/* Professional Dark-to-Light Overlay for Text Readability */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(to bottom, rgba(2, 6, 23, 0.4) 0%, rgba(2, 6, 23, 0.1) 50%, rgba(2, 6, 23, 0.6) 100%)',
+          zIndex: 1
+        }}></div>
 
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="section-label" style={{justifyContent: 'center', marginBottom: '24px', color: '#60a5fa', fontWeight: 800}}>Enterprise AI & Automation</div>
-          <h1 className="reveal" style={{ color: '#fff', fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+          <h1 className="reveal" style={{ color: '#fff', fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 1.1, letterSpacing: '-2px', fontWeight: 900, textShadow: '0 4px 30px rgba(0,0,0,0.6)' }}>
             Scale Operations. <em style={{color: '#60a5fa', fontStyle: 'normal'}}>Reduce Headcount.</em><br />Automate Everything.
           </h1>
-          <p className="sv-hero-sub reveal" style={{ color: 'rgba(255,255,255,0.85)', maxWidth: '800px', margin: '0 auto 48px' }}>We deploy highly secure, intelligent AI systems for medical and technical enterprises to eliminate manual data entry, streamline operations, and drastically lower operational costs without hiring more staff.</p>
+          <p className="sv-hero-sub reveal" style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '800px', margin: '0 auto 48px', fontSize: '1.25rem', fontWeight: 600, textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>We deploy highly secure, intelligent AI systems for medical and technical enterprises to eliminate manual data entry, streamline operations, and drastically lower operational costs without hiring more staff.</p>
           <div className="hero-btns" style={{justifyContent: 'center', animationDelay: '0.2s'}}>
             <Link to="/contact" className="btn btn--primary"><i className="ti ti-arrow-right"></i> Get a Free Automation Audit</Link>
-            <a href="#capabilities" className="btn" style={{ background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', backdropFilter: 'blur(12px)', transition: 'all 0.3s ease' }} onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'} onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}><i className="ti ti-layers-intersect"></i> View Capabilities</a>
+            <a href="#capabilities" className="btn btn--outline" style={{ color: '#fff', borderColor: '#fff' }}>View Capabilities</a>
           </div>
           
           {/* Stats Bar */}
-          <div className="sv-stats-bar reveal">
-            <AnimatedStat target={60} suffix="%" label="Cost Reduction" />
-            <AnimatedStat target={99} suffix=".9%" label="Uptime SLA" />
-            <AnimatedStat target={24} suffix="/7" label="Autonomous Ops" />
-            <AnimatedStat target={100} suffix="x" label="Faster Processing" />
+          <div className="sv-stats-bar-wrapper reveal">
+            <div className="sv-stats-bar">
+              <AnimatedStat target={60} suffix="%" label="Cost Reduction" />
+              <AnimatedStat target={99} suffix=".9%" label="Uptime SLA" />
+              <AnimatedStat target={24} suffix="/7" label="Autonomous Ops" />
+              <AnimatedStat target={100} suffix="x" label="Faster Processing" />
+            </div>
+            <div className="sv-stats-glow"></div>
           </div>
         </div>
       </section>

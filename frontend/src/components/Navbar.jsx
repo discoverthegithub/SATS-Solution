@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="nav">
         <Link to="/" className="nav-brand" onClick={closeMenu}>
-          <div className="nav-brand-icon">S</div>
+          <Logo size={42} />
           <span>SATS <em>Solutions</em></span>
         </Link>
         <div className="nav-links">
@@ -40,7 +41,7 @@ const Navbar = () => {
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`} id="mobileMenu">
         <div className="mob-header">
           <Link to="/" className="nav-brand" onClick={closeMenu} style={{ fontSize: '1.2rem' }}>
-            <div className="nav-brand-icon" style={{ width: '32px', height: '32px', fontSize: '14px' }}>S</div>
+            <Logo size={36} />
             <span>SATS <em>Solutions</em></span>
           </Link>
           <button className="mob-close" onClick={closeMenu} aria-label="Close">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="footer-mark">S</div>
+            <Logo size={48} className="footer-logo-mb" />
             <p>SATS Solutions provides enterprise-grade technology services, driving digital transformation for forward-thinking organizations.</p>
           </div>
           <div className="footer-col">
