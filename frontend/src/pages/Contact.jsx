@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { submitContactForm } from '../services/contactService';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   const [selectedService, setSelectedService] = useState('');
@@ -42,6 +43,11 @@ const Contact = () => {
 
   return (
     <main id="main-content">
+      <SEO
+        title="Contact Us | Enterprise AI Consultation"
+        description="Initiate your project consultation with SATS Solutions. Connect with our elite engineering council to architect your next AI or cloud transformation."
+        keywords="Contact SATS, AI Consultation, Tech Project Inquiry, Hire AI Engineers USA"
+      />
       <div className="contact-split-wrapper">
         <div className="contact-split-bg"></div>
         
@@ -51,8 +57,8 @@ const Contact = () => {
           <div className="contact-info-panel">
             <div className="contact-info-content">
               <div className="contact-info-header">
-                <h2>Let's Build<br /><em>Something Epic.</em></h2>
-                <p>Connect directly with our technical council from University of Yale, University of Pennsylvania, and Harvard University to architect your next enterprise project.</p>
+                <h2>Architecting<br /><em>The Future.</em></h2>
+                <p>Connect with our technical leadership council to engineer your organization's next breakthrough AI project.</p>
               </div>
 
               <div className="contact-info-list">
@@ -84,7 +90,7 @@ const Contact = () => {
               <div style={{ marginTop: 'auto' }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', padding: '12px 20px', background: 'rgba(0,0,0,0.15)', backdropFilter: 'blur(10px)', borderRadius: '100px' }}>
                   <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#10b981', boxShadow: '0 0 10px #10b981' }}></div>
-                  <span style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '1px', textTransform: 'uppercase' }}>Available for new projects</span>
+                  <span style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '1px', textTransform: 'uppercase' }}>Open for Strategic Partnerships</span>
                 </div>
               </div>
             </div>
@@ -92,8 +98,8 @@ const Contact = () => {
 
           {/* RIGHT SIDE: THE FORM */}
           <div className="contact-form-panel">
-            <h3>Project Inquiry</h3>
-            <p>Tell us a bit about your organization and technical requirements.</p>
+            <h3>Consultation Brief</h3>
+            <p>Articulate your organization’s technical requirements, and our senior architects will perform a comprehensive feasibility analysis.</p>
 
             <form onSubmit={handleSubmit}>
               {formStatus.show && (
@@ -156,11 +162,11 @@ const Contact = () => {
 
               <div className="premium-input-group" style={{ marginBottom: '40px' }}>
                 <textarea name="message" required placeholder=" "></textarea>
-                <label>Technical Brief</label>
+                <label>Technical Briefing / Project Scope</label>
               </div>
 
               <button type="submit" className="premium-submit-btn">
-                <span>Initiate Consultation</span>
+                <span>Request Technical Consultation</span>
                 <i className="ti ti-arrow-right"></i>
               </button>
             </form>

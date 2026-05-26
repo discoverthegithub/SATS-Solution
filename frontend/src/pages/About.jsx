@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import DataFlow from '../components/DataFlow';
+import SEO from '../components/SEO';
 
 const About = () => {
   useEffect(() => {
@@ -18,6 +18,11 @@ const About = () => {
 
   return (
     <main id="main-content">
+      <SEO
+        title="About SATS Solutions | Elite AI Technical Team"
+        description="Founded by graduates from Yale and UPenn, SATS Solutions is USA's elite technical powerhouse for enterprise-grade AI and cloud scalability."
+        keywords="Yale, UPenn, Harvard, Georgia Tech, AI Engineers, USA Tech Team"
+      />
       {/* ═══ HERO ═══ */}
       <header className="about-hero" style={{ position: 'relative', color: '#fff', padding: '120px 0 80px', textAlign: 'center', overflow: 'hidden', background: '#020617' }}>
         <img
@@ -44,25 +49,25 @@ const About = () => {
             </div>
             <div className="edge-content">
               <div className="section-label">Our Strategic Edge</div>
-              <h2 className="section-heading" style={{fontSize: '2.8rem'}}>Why Global Enterprises <em>Trust SATS</em></h2>
-              <p className="section-sub">We combine high-end academic excellence with real-world execution to solve the most complex technical challenges.</p>
+              <h2 className="section-heading" style={{fontSize: '2.8rem'}}>Engineering <em>Absolute Certainty</em></h2>
+              <p className="section-sub">We bridge the gap between academic theory and industrial-grade execution, delivering technical solutions that define market leaders.</p>
               
               <div className="advantage-list reveal-stagger">
                 <div className="advantage-item reveal">
                   <i className="ti ti-check"></i>
-                  <span>Graduates from <strong>University of Yale, University of Pennsylvania, Harvard University, & Georgia Tech University</strong>.</span>
+                  <span>Alumni Council from <strong>Yale, UPenn, Harvard, & Georgia Tech</strong>.</span>
                 </div>
                 <div className="advantage-item reveal">
                   <i className="ti ti-check"></i>
-                  <span>100% focused on Enterprise-grade scalability.</span>
+                  <span>Architecting for <strong>Infinite Scalability</strong> & High-Availability.</span>
                 </div>
                 <div className="advantage-item reveal">
                   <i className="ti ti-check"></i>
-                  <span>Security-first engineering mindset.</span>
+                  <span>Proactive <strong>Security-First</strong> Engineering DNA.</span>
                 </div>
                 <div className="advantage-item reveal">
                   <i className="ti ti-check"></i>
-                  <span>Sub-millisecond latency AI deployments.</span>
+                  <span>Mission-Critical AI with <strong>Sub-Millisecond Latency</strong>.</span>
                 </div>
               </div>
             </div>
@@ -79,18 +84,18 @@ const About = () => {
           <div className="pillar-grid reveal-stagger">
             <div className="pillar-card reveal">
               <div className="pillar-icon"><i className="ti ti-heart-handshake"></i></div>
-              <h3>Client-Centricity</h3>
-              <p>We don't just deliver projects; we build long-term partnerships rooted in your business success.</p>
+              <h3>Strategic Guardianship</h3>
+              <p>We transcend traditional project delivery, forging enduring strategic alliances rooted in your organization’s long-term prosperity.</p>
             </div>
             <div className="pillar-card reveal">
               <div className="pillar-icon"><i className="ti ti-microscope"></i></div>
-              <h3>Research-Driven</h3>
-              <p>We invest heavily in R&D to stay at the absolute forefront of AI and cybersecurity innovation.</p>
+              <h3>Research Sovereignty</h3>
+              <p>We commit significant capital to R&D, commanding the absolute frontier of AI and cybersecurity innovation.</p>
             </div>
             <div className="pillar-card reveal">
               <div className="pillar-icon"><i className="ti ti-binary"></i></div>
-              <h3>Technical Rigor</h3>
-              <p>Our codebases are audit-ready, secure, and built using the world's most robust engineering frameworks.</p>
+              <h3>Architectural Rigor</h3>
+              <p>Every architecture is audit-ready, cryptographically hardened, and engineered using industry-defining protocols.</p>
             </div>
           </div>
         </div>
@@ -107,29 +112,29 @@ const About = () => {
               img="/assets/images/avatar-1.jpg"
               name="Muhammad Tayyab"
               uni="University of Yale"
-              role="Founder & Technical Head"
-              desc="Software Architecture & AI Specialist."
+              role="Founder & Chief Architect"
+              desc="Expert in Distributed Systems & Neural Architecture."
             />
             <FounderCard
               img="/assets/images/avatar-2.jpg"
               name="Muhammad Shehriyar"
               uni="University of Pennsylvania"
-              role="Co-Founder & Tech Head"
-              desc="Cybersecurity & Infra Engineering."
+              role="Co-Founder & VP of Security"
+              desc="Specialist in Zero-Trust Infrastructure & Cloud Hardening."
             />
             <FounderCard
               img="/assets/images/avatar-3.jpg"
               name="Shahzaib Farooq"
               uni="Harvard University"
-              role="HR & Marketing Head"
-              desc="Global Strategy & Brand Operations."
+              role="Head of Global Strategy"
+              desc="Driving International Brand Operations & Market Expansion."
             />
             <FounderCard
               img="/assets/images/avatar-4.jpg"
               name="Arham Asif"
               uni="Georgia Tech University"
-              role="Customer Ops Head"
-              desc="Client Relations & Delivery Excellence."
+              role="Head of Delivery Excellence"
+              desc="Ensuring Seamless Client Integration & Project Success."
             />
           </div>
         </div>
@@ -141,8 +146,8 @@ const About = () => {
           <div className="cta-orb cta-orb--1"></div>
           <div className="cta-orb cta-orb--2"></div>
         </div>
-        <h2 style={{color: '#fff', marginBottom: '20px'}}>Ready to work with the <em>Top 1%?</em></h2>
-        <Link to="/contact" className="btn btn--white">Get Started</Link>
+        <h2 style={{color: '#fff', marginBottom: '20px'}}>Ready to Partner with the <em>Top 1%?</em></h2>
+        <Link to="/contact" className="btn btn--white">Initiate Consultation</Link>
       </div>
     </main>
   );

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 // Custom hook for animated counters
 const useAnimatedCounter = (target, duration = 2000) => {
@@ -71,6 +72,11 @@ const Services = () => {
 
   return (
     <main id="main-content">
+      <SEO
+        title="Enterprise AI & Automation Services"
+        description="Scale your enterprise operations and reduce headcount with secure, intelligent AI systems. Specializing in medical and technical automation."
+        keywords="Enterprise AI, Medical AI, Tech Ops Automation, RPA, USA Automation"
+      />
       {/* ═══ HERO ═══ */}
       <section className="sv-hero" style={{
         position: 'relative',
@@ -105,9 +111,9 @@ const Services = () => {
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="section-label" style={{justifyContent: 'center', marginBottom: '24px', color: '#60a5fa', fontWeight: 800}}>Enterprise AI & Automation</div>
           <h1 className="reveal" style={{ color: '#fff', fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 1.1, letterSpacing: '-2px', fontWeight: 900, textShadow: '0 4px 30px rgba(0,0,0,0.6)' }}>
-            Scale Operations. <em style={{color: '#60a5fa', fontStyle: 'normal'}}>Reduce Headcount.</em><br />Automate Everything.
+            Orchestrating the <em style={{color: '#60a5fa', fontStyle: 'normal'}}>Autonomous Enterprise.</em><br />Scale Infinitely.
           </h1>
-          <p className="sv-hero-sub reveal" style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '800px', margin: '0 auto 48px', fontSize: '1.25rem', fontWeight: 600, textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>We deploy highly secure, intelligent AI systems for medical and technical enterprises to eliminate manual data entry, streamline operations, and drastically lower operational costs without hiring more staff.</p>
+          <p className="sv-hero-sub reveal" style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '800px', margin: '0 auto 48px', fontSize: '1.25rem', fontWeight: 600, textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>SATS Solutions engineers hyper-intelligent AI ecosystems for global medical and technical firms. We eliminate operational friction, automate high-stakes documentation, and achieve unprecedented cost efficiencies through elite-tier engineering.</p>
           <div className="hero-btns" style={{justifyContent: 'center', animationDelay: '0.2s'}}>
             <Link to="/contact" className="btn btn--primary"><i className="ti ti-arrow-right"></i> Get a Free Automation Audit</Link>
             <a href="#capabilities" className="btn btn--outline" style={{ color: '#fff', borderColor: '#fff' }}>View Capabilities</a>
@@ -129,33 +135,33 @@ const Services = () => {
       {/* ═══ CAPABILITIES ═══ */}
       <section id="capabilities" style={{paddingTop: '80px'}}>
         <div className="container">
-          <div className="section-label">Core Automation Focus</div>
-          <h2 className="section-heading">Intelligent <em>Workflows</em></h2>
-          <p className="section-sub" style={{marginBottom: '60px'}}>Specialized AI integrations designed to replace repetitive human tasks across high-compliance industries.</p>
+          <div className="section-label">Strategic Capabilities</div>
+          <h2 className="section-heading">High-Stakes <em>Automation</em></h2>
+          <p className="section-sub" style={{marginBottom: '60px'}}>Specialized AI frameworks designed to replace repetitive manual labor across high-compliance industries with absolute precision.</p>
 
           <div className="services-grid reveal-stagger">
             <div className="svc-card svc-card--accent-blue reveal">
               <div className="svc-num">01</div>
               <div className="svc-icon svc-icon--blue"><i className="ti ti-stethoscope"></i></div>
-              <h3>Medical AI Automation</h3>
-              <p>Automate patient onboarding, clinical documentation, and complex medical billing. Our compliant NLP models read and extract patient histories 100x faster than administrative staff.</p>
-              <div className="tag-row"><span className="tag">HIPAA Compliant</span><span className="tag">Clinical NLP</span><span className="tag">Billing Automation</span></div>
+              <h3>Precision Medical AI</h3>
+              <p>Advanced patient onboarding, clinical NLP, and automated medical billing. Our HIPAA-compliant models extract historical data 100x faster than administrative staff.</p>
+              <div className="tag-row"><span className="tag">Clinical NLP</span><span className="tag">Data Sovereignty</span><span className="tag">HL7/FHIR</span></div>
             </div>
 
             <div className="svc-card svc-card--accent-amber reveal">
               <div className="svc-num">02</div>
               <div className="svc-icon svc-icon--amber"><i className="ti ti-cpu"></i></div>
-              <h3>Technical Ops Automation</h3>
-              <p>Replace manual IT ticketing, L1 support, and infrastructure monitoring with autonomous AI agents. Reduce your IT department headcount while achieving 24/7 resolution times.</p>
-              <div className="tag-row"><span className="tag">AIOps</span><span className="tag">Autonomous Agents</span><span className="tag">RPA</span></div>
+              <h3>Autonomous AIOps</h3>
+              <p>Eliminate manual L1 support and infrastructure monitoring with self-healing AI agents. Reduce your IT overhead while achieving sub-millisecond response times.</p>
+              <div className="tag-row"><span className="tag">Self-Healing</span><span className="tag">Agentic Workflows</span><span className="tag">RPA</span></div>
             </div>
 
             <div className="svc-card reveal">
               <div className="svc-num">03</div>
               <div className="svc-icon"><i className="ti ti-code"></i></div>
-              <h3>Custom Software Engineering</h3>
-              <p>Enterprise-grade web and mobile applications engineered to serve as the secure foundation for your new automated AI capabilities.</p>
-              <div className="tag-row"><span className="tag">Java</span><span className="tag">.NET</span><span className="tag">React</span><span className="tag">Node.js</span></div>
+              <h3>Bespoke Engineering</h3>
+              <p>Enterprise-grade architecture engineered to serve as the secure foundation for your organization’s next-generation automated capabilities.</p>
+              <div className="tag-row"><span className="tag">Scalability</span><span className="tag">Cloud Native</span><span className="tag">Robust Code</span></div>
             </div>
 
             <div className="svc-card reveal">
@@ -194,23 +200,23 @@ const Services = () => {
 
           <div className="ba-matrix reveal">
             <div className="ba-col before">
-              <div className="ba-head"><i className="ti ti-circle-x"></i> Traditional Workflow</div>
+              <div className="ba-head"><i className="ti ti-circle-x"></i> Legacy Ecosystem</div>
               <ul className="ba-list">
-                <li><i className="ti ti-users"></i> Requires massive administrative headcount</li>
-                <li><i className="ti ti-clock-pause"></i> 9-to-5 processing limits business growth</li>
-                <li><i className="ti ti-alert-triangle"></i> Prone to human error in data entry & billing</li>
-                <li><i className="ti ti-trending-down"></i> High operational overhead and salary costs</li>
-                <li><i className="ti ti-file-text"></i> Slow response times to technical/patient tickets</li>
+                <li><i className="ti ti-users"></i> Burdened by prohibitive labor overhead</li>
+                <li><i className="ti ti-clock-pause"></i> Temporal constraints inhibiting scalability</li>
+                <li><i className="ti ti-alert-triangle"></i> Susceptible to manual operational inaccuracies</li>
+                <li><i className="ti ti-trending-down"></i> Escalating OPEX and salary expenditures</li>
+                <li><i className="ti ti-file-text"></i> Latent response times to technical/clinical triage</li>
               </ul>
             </div>
             <div className="ba-col after">
-              <div className="ba-head"><i className="ti ti-circle-check"></i> SATS AI Automation</div>
+              <div className="ba-head"><i className="ti ti-circle-check"></i> SATS Neural Infrastructure</div>
               <ul className="ba-list">
-                <li><i className="ti ti-users-minus"></i> Scale infinitely without hiring more staff</li>
-                <li><i className="ti ti-bolt"></i> 24/7/365 continuous autonomous processing</li>
-                <li><i className="ti ti-target"></i> Zero-error extraction using advanced LLMs</li>
-                <li><i className="ti ti-trending-up"></i> Drastic reduction in operational OPEX</li>
-                <li><i className="ti ti-rocket"></i> Instantaneous L1 support and triage routing</li>
+                <li><i className="ti ti-users-minus"></i> Unbound horizontal scalability without headcount inflation</li>
+                <li><i className="ti ti-bolt"></i> Perpetual 24/7/365 autonomous orchestration</li>
+                <li><i className="ti ti-target"></i> Zero-error precision through sovereign LLMs</li>
+                <li><i className="ti ti-trending-up"></i> Drastic compression of operational OPEX</li>
+                <li><i className="ti ti-rocket"></i> Instantaneous L1 resolution and intelligent routing</li>
               </ul>
             </div>
           </div>
@@ -257,23 +263,23 @@ const Services = () => {
           <div className="process-grid reveal-stagger">
             <div className="process-step reveal">
               <div className="step-num">1</div>
-              <h4>Workflow Audit</h4>
-              <p>We analyze your business to identify high-volume, manual tasks that are inflating your headcount costs.</p>
+              <h4>Operational Audit</h4>
+              <p>We analyze your technical landscape to identify high-friction manual tasks inflating your labor expenditures.</p>
             </div>
             <div className="process-step reveal">
               <div className="step-num">2</div>
-              <h4>Architecture</h4>
-              <p>We design a secure, compliant AI architecture tailored to integrate directly with your existing software stack.</p>
+              <h4>Neural Architecture</h4>
+              <p>We design a sovereign, high-compliance AI blueprint tailored for seamless integration with your existing stack.</p>
             </div>
             <div className="process-step reveal">
               <div className="step-num">3</div>
-              <h4>Implementation</h4>
-              <p>Our engineers deploy the AI agents, train the models, and establish the automated data pipelines.</p>
+              <h4>Core Deployment</h4>
+              <p>Our architects deploy autonomous agents and establish secure, high-concurrency data pipelines.</p>
             </div>
             <div className="process-step reveal">
               <div className="step-num">4</div>
-              <h4>Optimization</h4>
-              <p>Continuous monitoring and refinement of the AI systems to ensure maximum efficiency and ROI.</p>
+              <h4>Iterative Alpha</h4>
+              <p>Continuous refinement of the neural systems to ensure maximum operational ROI and absolute precision.</p>
             </div>
           </div>
         </div>

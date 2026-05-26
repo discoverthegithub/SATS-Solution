@@ -1,48 +1,49 @@
 import React, { useState, useEffect } from 'react';
 import { jsPDF } from 'jspdf';
+import SEO from '../components/SEO';
 
 const blogArticles = [
   {
     id: 'gen-ai',
     tag: 'White Paper',
-    title: 'Generative AI in Corporate Workflows',
+    title: 'Sovereign Neural Architectures',
     img: '/assets/images/blog-1.jpg',
-    desc: 'Implementing Private Cloud LLMs to ensure data sovereignty in high-compliance sectors.'
+    desc: 'Engineering private, localized LLM ecosystems to ensure absolute data sovereignty in high-compliance sectors.'
   },
   {
     id: 'hybrid-cloud',
     tag: 'Technical Guide',
-    title: 'The Secure Hybrid Cloud Standard',
+    title: 'Hardening Hybrid-Cloud Topologies',
     img: '/assets/images/blog-2.jpg',
-    desc: 'Optimizing on-premise security with public cloud scalability using sub-5ms sync pipelines.'
+    desc: 'Orchestrating sub-5ms synchronization between legacy infrastructure and public cloud scalability.'
   },
   {
     id: 'zero-trust',
     tag: 'Case Study',
-    title: 'Zero Trust: The UPenn Protocol',
+    title: 'The UPenn Zero-Trust Protocol',
     img: '/assets/images/blog-3.jpg',
-    desc: 'A 12-month transformation journey eliminating VPN vulnerabilities across 5,000 endpoints.'
+    desc: 'A strategic 12-month evolution in identity-centric security, fortifying over 5,000 enterprise endpoints.'
   },
   {
     id: 'python-ai',
     tag: 'Engineering',
-    title: 'High-Concurrency Python Inference',
+    title: 'High-Velocity AI Inference',
     img: '/assets/images/blog-4.jpg',
-    desc: 'Using FastAPI and TensorRT for enterprise-grade AI response times in production.'
+    desc: 'Leveraging NVIDIA TensorRT and FastAPI to achieve unprecedented response times in neural production.'
   },
   {
     id: 'soc2',
     tag: 'Compliance',
-    title: 'SOC 2 Type II Readiness',
+    title: 'The CTO’s Compliance Blueprint',
     img: '/assets/images/blog-5.jpg',
-    desc: 'A checklist for CTOs preparing for high-end security and privacy audits in 2026.'
+    desc: 'A high-level strategic checklist for preparing enterprise infrastructure for rigorous 2026 security audits.'
   },
   {
     id: 'edge-comp',
     tag: 'Infrastructure',
-    title: 'Edge Computing & Autonomous IoT',
+    title: 'The Autonomous Latency Imperative',
     img: '/assets/images/blog-6.jpg',
-    desc: 'Why latency is the new frontier for smart manufacturing and logistics firms.'
+    desc: 'Analyzing why sub-millisecond edge processing is the mandatory frontier for smart industrial ecosystems.'
   }
 ];
 
@@ -81,13 +82,13 @@ const Blog = () => {
     doc.text("SATS SOLUTIONS", 105, y, { align: "center" }); y += 15;
     doc.setFontSize(14);
     doc.setTextColor(100, 100, 100);
-    doc.text("EXECUTIVE STRATEGY WHITE PAPER 2026", 105, y, { align: "center" }); y += 20;
+    doc.text("EXECUTIVE STRATEGIC BLUEPRINT 2026", 105, y, { align: "center" }); y += 20;
     doc.setLineWidth(0.8);
     doc.line(20, y, 190, y); y += 15;
 
     addText(`TITLE: ${title.toUpperCase()}`, 16, "bold", [10, 22, 40]);
     addText("1. EXECUTIVE SUMMARY", 14, "bold", [0, 82, 204]);
-    addText("In 2026, the competitive landscape for global enterprises is no longer defined by data availability, but by the speed and security of autonomous decision-making. SATS Solutions provides the strategic framework required for organizations to transition from legacy manual operations to AI-driven ecosystems.", 11);
+    addText("In 2026, the global enterprise landscape is no longer defined by simple data accumulation, but by the velocity and integrity of autonomous decision engines. SATS Solutions provides the strategic architecture required to evolve from legacy manual operations to fully orchestrated AI ecosystems.", 11);
 
     addText("2. THE SATS DNA: ELITE LEADERSHIP", 14, "bold", [0, 82, 204]);
     addText("Our firm is built upon the academic excellence of USA America's most prestigious institutions, bringing together a technical council that understands both business logic and deep-code implementation.", 11);
@@ -123,6 +124,11 @@ const Blog = () => {
 
   return (
     <main id="main-content">
+      <SEO
+        title="Technical Insights | Enterprise AI Whitepapers"
+        description="Access professional whitepapers and technical guides on Generative AI, Zero Trust infrastructure, and high-concurrency Python inference."
+        keywords="AI Whitepapers, Technical Blog, Cloud Security Guide, Enterprise AI Roadmap"
+      />
       {/* ═══ HERO ═══ */}
       <header className="insight-hero" style={{padding: '120px 0 60px', textAlign: 'center', background: 'var(--bg)'}}>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ParticleNetwork from '../components/ParticleNetwork';
+import SEO from '../components/SEO';
 
 const Careers = () => {
   useEffect(() => {
@@ -18,6 +19,11 @@ const Careers = () => {
 
   return (
     <main id="main-content">
+      <SEO
+        title="Careers | Join the Elite AI Team"
+        description="We are recruiting the top 1% of engineering talent. Work on complex global AI challenges with graduates from Yale and UPenn."
+        keywords="AI Careers, Software Engineer Jobs, Machine Learning Engineering Roles, SATS Solutions Careers"
+      />
       {/* ═══ HERO ═══ */}
       <header className="careers-hero" style={{ position: 'relative', color: '#fff', padding: '120px 0 80px', textAlign: 'center', overflow: 'hidden' }}>
         <ParticleNetwork />
@@ -26,7 +32,7 @@ const Careers = () => {
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="section-label reveal" style={{ color: 'var(--accent)' }}>Elite Engineering Careers</div>
           <h1 className="section-heading reveal" style={{ color: '#fff', fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '24px' }}>Build the <em>Infrastructure</em> of Tomorrow.</h1>
-          <p className="section-sub reveal" style={{ color: 'rgba(255,255,255,0.8)', margin: '0 auto', maxWidth: '700px' }}>We are recruiting the top 1% of talent from USA America's most prestigious institutions to solve complex global enterprise challenges.</p>
+          <p className="section-sub reveal" style={{ color: 'rgba(255,255,255,0.8)', margin: '0 auto', maxWidth: '700px' }}>We are curating a league of extraordinary engineers from USA America's premier Ivy League and technical institutions to architect the future of global enterprise AI.</p>
           <div className="reveal" style={{ marginTop: '40px', display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="#positions" className="btn btn--primary">View Open Roles</a>
             <a href="#culture" className="btn btn--outline" style={{ color: '#fff', borderColor: 'rgba(255,255,255,0.3)' }}>Our Culture</a>
@@ -38,9 +44,9 @@ const Careers = () => {
       <section id="culture" style={{padding: '100px 0'}}>
         <div className="container">
           <div style={{textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px'}}>
-            <div className="section-label" style={{justifyContent: 'center'}}>Life at SATS</div>
-            <h2 className="section-heading">Innovation in <em>Every</em> Pixel.</h2>
-            <p className="section-sub" style={{margin: '0 auto'}}>Beyond the code, SATS is a community of lifelong learners, university champions, and problem solvers.</p>
+            <div className="section-label" style={{justifyContent: 'center'}}>Ecosystem Culture</div>
+            <h2 className="section-heading">Innovation in <em>Every</em> Dimension.</h2>
+            <p className="section-sub" style={{margin: '0 auto'}}>Transcending technical execution, SATS represents an elite collective of academic laureates and visionary problem solvers.</p>
           </div>
 
           <div className="culture-grid reveal-stagger">
@@ -50,12 +56,12 @@ const Careers = () => {
           </div>
 
           <div className="perks-grid reveal-stagger">
-            <Perk icon="ti-rocket" title="Hyper-Growth" text="Work directly with founders from University of Yale & University of Pennsylvania in a high-stakes, rewarding atmosphere." />
-            <Perk icon="ti-certificate" title="Upskilling" text="We fund your professional certifications in AI, Cloud, and Cybersecurity." />
-            <Perk icon="ti-device-laptop" title="Hardware" text="Access the best tools: High-end MacBooks and peripherals for all engineers." />
-            <Perk icon="ti-heart-rate-monitor" title="Premium Health" text="Full medical coverage for you and your family, including mental health support." />
-            <Perk icon="ti-plane-departure" title="Hybrid-First" text="Choose between our high-end San Francisco HQ or your home office. We value results." />
-            <Perk icon="ti-gift" title="Performance" text="Quarterly profit-sharing and milestone bonuses. We win as a team." />
+            <Perk icon="ti-rocket" title="Exponential Growth" text="Collaborate directly with our Yale & UPenn alumni founders in a fast-paced, mission-driven environment." />
+            <Perk icon="ti-certificate" title="Professional Mastery" text="We sponsor your pursuit of advanced certifications in AI architecture, Cloud security, and Deep Learning." />
+            <Perk icon="ti-device-laptop" title="Workstations" text="Leverage the latest M3-Max MacBooks and high-performance peripherals designed for extreme productivity." />
+            <Perk icon="ti-heart-rate-monitor" title="Total Wellness" text="Comprehensive medical coverage and mental health support for you and your family’s complete peace of mind." />
+            <Perk icon="ti-plane-departure" title="Location Autonomy" text="Experience a hybrid-first culture. Choose between our high-end San Francisco hub or work from anywhere." />
+            <Perk icon="ti-gift" title="Value Sharing" text="Benefit from our performance-based profit-sharing model and milestone-driven technical bonuses." />
           </div>
         </div>
       </section>
@@ -69,10 +75,10 @@ const Careers = () => {
           </div>
 
           <div className="process-visual reveal-stagger">
-            <Step num="01" title="Review" desc="Portfolio & Academic screening (Yale/UPenn focus)." />
-            <Step num="02" title="Engineering" desc="Deep technical dive with our technical heads." />
-            <Step num="03" title="DNA Match" desc="Discussion with HR Lead Shahzaib Farooq." />
-            <Step num="04" title="The Offer" desc="Welcome to the elite team of innovators." />
+            <Step num="01" title="Initial Audit" desc="In-depth portfolio evaluation and academic verification (Yale/UPenn focus)." />
+            <Step num="02" title="Technical Deep-Dive" desc="Advanced algorithmic and systems architecture challenge with our Chief Architect." />
+            <Step num="03" title="Cultural Synergy" desc="Strategic discussion with our leadership council to ensure absolute DNA alignment." />
+            <Step num="04" title="The Deployment" desc="Formal offer to join our elite squad of technical innovators." />
           </div>
         </div>
       </section>
@@ -90,26 +96,26 @@ const Careers = () => {
 
           <div className="reveal-stagger">
             <JobCard
-              title="Senior AI/ML Engineer"
-              desc="Architecting Large Language Models and RAG pipelines for global health-tech enterprises. Requires expertise in Python, PyTorch, and Vector DBs."
-              tags={[{ icon: 'ti-briefcase', text: 'Full-Time' }, { icon: 'ti-map-pin', text: 'Hybrid / SF' }, { icon: 'ti-flame', text: 'Hot Role', highlight: true }]}
+              title="Principal AI/ML Architect"
+              desc="Design and deploy scalable Neural Architectures and RAG pipelines for multi-billion dollar healthcare enterprises. Expertise in PyTorch & CUDA required."
+              tags={[{ icon: 'ti-briefcase', text: 'Full-Time' }, { icon: 'ti-map-pin', text: 'Hybrid / SF' }, { icon: 'ti-flame', text: 'Strategic Role', highlight: true }]}
             />
             <JobCard
-              title="Full-Stack JavaScript Architect"
-              desc="Leading the development of our autonomous agency dashboards. Deep proficiency in Next.js, TypeScript, and high-performance UI engineering."
-              tags={[{ icon: 'ti-briefcase', text: 'Full-Time' }, { icon: 'ti-world', text: 'Remote' }, { icon: 'ti-code', text: 'Frontend / UX' }]}
+              title="Senior Full-Stack Cloud Architect"
+              desc="Lead the engineering of autonomous dashboard ecosystems. Mastery of Next.js 15, TypeScript, and high-concurrency cloud environments is essential."
+              tags={[{ icon: 'ti-briefcase', text: 'Full-Time' }, { icon: 'ti-world', text: 'Remote' }, { icon: 'ti-code', text: 'Infrastructure' }]}
             />
             <JobCard
-              title="Cybersecurity Specialist"
-              desc="Ensuring zero-trust standards across enterprise infrastructure. Auditing codebases and hardening our cloud environments for 2026 standards."
-              tags={[{ icon: 'ti-lock', text: 'Full-Time' }, { icon: 'ti-map-pin', text: 'San Francisco HQ' }, { icon: 'ti-shield-check', text: 'Security' }]}
+              title="Cybersecurity Infrastructure Lead"
+              desc="Harden enterprise-grade cloud environments and audit codebases for 2026 Zero-Trust compliance standards. Focus on automated threat mitigation."
+              tags={[{ icon: 'ti-lock', text: 'Full-Time' }, { icon: 'ti-map-pin', text: 'San Francisco' }, { icon: 'ti-shield-check', text: 'SecOps' }]}
             />
           </div>
 
           <div style={{marginTop: '80px', textAlign: 'center', background: 'var(--bg-alt)', padding: '60px 20px', borderRadius: 'var(--radius-lg)'}} className="reveal">
-            <h3 style={{fontWeight: 800, marginBottom: '12px'}}>Don't see your role?</h3>
-            <p style={{color: 'var(--text-500)', marginBottom: '30px'}}>We are always looking for the top 1% of engineers. Send us your resume for a general application.</p>
-            <Link to="/contact" className="btn btn--outline">Send General Application</Link>
+            <h3 style={{fontWeight: 800, marginBottom: '12px'}}>Uncharted Territories</h3>
+            <p style={{color: 'var(--text-500)', marginBottom: '30px'}}>We maintain a perpetual search for the top 1% of technical talent. Submit a general inquiry to join our elite roster.</p>
+            <Link to="/contact" className="btn btn--outline">Submit General Inquiry</Link>
           </div>
         </div>
       </section>
@@ -117,9 +123,9 @@ const Careers = () => {
       {/* ═══ FINAL CTA ═══ */}
       <div className="cta-banner" style={{background: 'linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%)', padding: '120px 20px'}}>
         <div className="container" style={{textAlign: 'center'}}>
-          <h2 style={{color: '#fff', fontSize: 'clamp(2rem, 4vw, 3rem)', marginBottom: '24px'}}>Level <em>Up</em> Your Career.</h2>
-          <p style={{color: 'rgba(255,255,255,0.7)', marginBottom: '48px', maxWidth: '600px', margin: '0 auto 48px'}}>Join a team that values technical mastery, radical transparency, and absolute engineering excellence.</p>
-          <Link to="/contact" className="btn btn--primary" style={{padding: '18px 40px', fontSize: '1rem'}}>Join the SATS Network</Link>
+          <h2 style={{color: '#fff', fontSize: 'clamp(2rem, 4vw, 3rem)', marginBottom: '24px'}}>Ascend Your <em>Technical</em> Career.</h2>
+          <p style={{color: 'rgba(255,255,255,0.7)', marginBottom: '48px', maxWidth: '600px', margin: '0 auto 48px'}}>Join an elite network that prioritizes radical transparency, technical mastery, and absolute engineering integrity.</p>
+          <Link to="/contact" className="btn btn--primary" style={{padding: '18px 40px', fontSize: '1rem'}}>Secure Your Future</Link>
         </div>
       </div>
     </main>
